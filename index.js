@@ -8,6 +8,11 @@ class Driver {
 
     store.drivers.push(this)
   }
+  passengers(){
+    return store.passengers.filter(passenger => {
+      return passenger.id === this.id;
+    })
+  }
 }
 
 class Passenger{
