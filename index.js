@@ -19,7 +19,7 @@ class Driver {
   }
 
   passengers(){
-    return store.trips().map(trip => {
+    return this.trips().map(trip => {
       return trip.passenger();
     })
   }
