@@ -37,6 +37,11 @@ class Passenger{
       return trip.passengerId == this.id;
     })
   }
+  drivers(){
+    return store.trips.map(trip => {
+      return trip.driverId == this.id;
+    })
+  }
 }
 
 class Trip{
